@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>navigation bar</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+</head>
+
+<style>
+	* {
+	margin: 0;
+	padding: 0;
+	font-family: Ubuntu;
+	font-size: 1em;
+	font-weight: bold;
+	color: #F012BE;
+}
+body {
+	background-color: #FFDC00;
+}
+ul {
+	overflow: auto;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -320px;
+}
+ul li {
+	list-style-type: none;
+	float: left;
+	border-bottom: 3px solid #3D9970;
+	border-right: 1px solid #3D9970;
+}
+
+ul li a {
+	display: inline-block;
+	background-color: #01FF70; 
+	width: 150px;
+	height: 20px;
+	padding: 5px;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+
+li:nth-child(1) a:hover{
+	background-color: #2ECC40;
+	transform: translate(0px,3px);
+	transition: transform 0.2s linear;
+	box-shadow: 0 -3px #0074D9;
+}
+
+li:nth-child(2) a:hover{
+	background-color: #2ECC40;
+	transform: translate(0px,3px);
+	transition: transform 0.2s linear;
+	box-shadow: 0 -3px #FF4136;
+}
+
+li:nth-child(3) a:hover{
+	background-color: #2ECC40;
+	transform: translate(0px,3px);
+	transition: transform 0.2s linear;
+	box-shadow: 0 -3px #F012BE;
+}
+
+li:nth-child(4) a:hover{
+	background-color: #2ECC40;
+	transform: translate(0px,3px);
+	transition: transform 0.2s linear;
+	box-shadow: 0 -3px #FF851B;
+}
+
+ul li a:focus {
+	opacity: 0.8;
+	transition: opacity 0.2s linear;
+}
+
+li:first-child {
+	border-left: 1px solid #3D9970;
+}
+</style>
+
+
+<body>
+	
+<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Projects</a></li>
+	<li><a href="#">Blog</a></li>
+	<li><a href="#">Contact</a></li>
+</ul>
+
+
+</body>
+</html>
